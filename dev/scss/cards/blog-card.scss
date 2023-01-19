@@ -1,0 +1,19 @@
+@import '../common-imports';
+.blog-card {
+    box-shadow: 8px 8px 0px 0px #f4eee8;
+    background-color: #fff;
+    &__image {
+        &::before {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: 66.37%;
+            }
+            @include media-breakpoint-up(xl) {
+                --bs-aspect-ratio: 75%;
+            }
+        }
+    }
+    &:hover {
+        background-color: $blush;
+        box-shadow: 8px 8px 0px 0px $peach;
+    }
+}

@@ -1,0 +1,335 @@
+// Transitions
+.transition {
+    &-slow {
+        @include transition(all 0.5s ease !important);
+    }
+
+    &-fast {
+        @include transition(all 0.3s ease !important);
+    }
+}
+
+// Links
+.link {
+    &-styled {
+        position: relative !important;
+        text-decoration: none !important;
+        font-weight: 500 !important;
+
+        &::after {
+            content: '' !important;
+            background-color: $primary !important;
+            width: 100% !important;
+            height: rem(2px) !important;
+            position: absolute !important;
+            bottom: rem(-7px) !important;
+            left: 0 !important;
+            @extend .transition-fast;
+        }
+
+        &:hover {
+            &:hover,
+            &:focus,
+            &:active,
+            &.disabled,
+            &:disabled {
+                @extend .opacity-3;
+            }
+        }
+    }
+}
+
+// Truncating the paragraphs
+.truncate {
+    &--1-line {
+        @include ellipsis(30px, 1);
+    }
+
+    &--2-line {
+        @include ellipsis(58px, 2);
+    }
+
+    &--3-line {
+        @include ellipsis(84px, 3);
+    }
+}
+
+// Background Variations
+.bg {
+    &-cover {
+        background-size: cover !important;
+    }
+
+    &-position {
+        &-center {
+            background-position: center center !important;
+        }
+    }
+
+    &-no-repeat {
+        background-repeat: no-repeat !important;
+    }
+}
+
+// Text Styling
+.text {
+    &-line-through {
+        text-decoration: line-through !important;
+    }
+
+    &-underline {
+        text-decoration: underline !important;
+    }
+}
+
+// Image Full Screen
+.full-screen {
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
+    @extend .bg-position-center;
+}
+
+// Positions
+.position {
+    &-l-0 {
+        left: 0 !important;
+    }
+
+    &-r-0 {
+        right: 0 !important;
+    }
+
+    &-b-0 {
+        bottom: 0 !important;
+    }
+
+    &-t-0 {
+        top: 0 !important;
+    }
+
+    &-lt-0 {
+        @extend .position-l-0;
+        @extend .position-t-0;
+    }
+
+    &-rt-0 {
+        @extend .position-r-0;
+        @extend .position-t-0;
+    }
+
+    &-lb-0 {
+        @extend .position-l-0;
+        @extend .position-b-0;
+    }
+}
+
+// Opacity
+.opacity {
+    &-0 {
+        @include opacity(0);
+    }
+
+    &-1 {
+        @include opacity(1);
+    }
+
+    &-2 {
+        @include opacity(0.2);
+    }
+
+    &-3 {
+        @include opacity(0.3);
+    }
+
+    &-4 {
+        @include opacity(0.4);
+    }
+
+    &-5 {
+        @include opacity(0.5);
+    }
+
+    &-6 {
+        @include opacity(0.6);
+    }
+
+    &-7 {
+        @include opacity(0.7);
+    }
+
+    &-8 {
+        @include opacity(0.8);
+    }
+
+    &-9 {
+        @include opacity(0.9);
+    }
+}
+
+// Overflow Variations
+.overflow {
+    &-auto {
+        overflow: auto !important;
+    }
+
+    &-x {
+        overflow-x: hidden !important;
+    }
+
+    &-y {
+        overflow-y: hidden !important;
+    }
+}
+
+// Width Variations
+.w {
+    &-100-vw {
+        width: 100vw !important;
+    }
+}
+
+// height Variations
+.h {
+    &-100-vh {
+        height: 100vh !important;
+    }
+}
+
+// Text Indention For Hiding
+.text {
+    &-indent {
+        text-indent: rem(-9999px) !important;
+    }
+
+    &-indent-0 {
+        text-indent: 0 !important;
+    }
+}
+
+// Image Fit
+.object {
+    &-fit {
+        object-fit: cover !important;
+    }
+
+    &-position {
+        &-center {
+            object-position: center !important;
+        }
+    }
+}
+
+// Flex Assets
+.flex {
+    &-rows-break {
+        flex-basis: 100% !important;
+        height: 0 !important;
+        margin: 0 !important;
+    }
+    &-bottom-push {
+        flex: 1 0 auto;
+    }
+}
+
+// Transform
+.transform {
+    &-xy-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// Control
+.media {
+    &-control {
+        border: none;
+        background-color: $white;
+        width: rem(60px);
+        height: rem(60px);
+        border-radius: 50%;
+        line-height: 1;
+
+        @include media-breakpoint-up(md) {
+            width: rem(88.43px);
+            height: rem(88.43px);
+        }
+    }
+}
+
+// Section gutter
+.section {
+    &-gutter,
+    &-gutter-md {
+        padding-top: rem(64px);
+        padding-bottom: rem(64px);
+        @include media-breakpoint-up(sm) {
+            padding-top: rem(80px);
+            padding-bottom: rem(80px);
+        }
+    }
+    &-gutter {
+        @include media-breakpoint-up(md) {
+            padding-top: rem(120px);
+            padding-bottom: rem(120px);
+        }
+    }
+    &-gutter-md {
+        @include media-breakpoint-up(md) {
+            padding-top: rem(104px);
+            padding-bottom: rem(104px);
+        }
+    }
+}
+
+figure {
+    margin: rem(0px);
+}
+
+img {
+    @extend .mw-100;
+}
+
+ul {
+    margin: rem(0px);
+    padding: rem(0px);
+    li {
+        list-style-type: none;
+    }
+}
+
+.collapse-text {
+    max-height: rem(140px);
+    position: relative;
+    overflow-y: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: rem(74px);
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 43, 73, 0), $primary);
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    &--light {
+        &::before {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+        }
+    }
+    @include media-breakpoint-up(md) {
+        max-height: initial;
+    }
+    &.expand {
+        max-height: initial;
+        &::before {
+            display: none;
+        }
+    }
+}

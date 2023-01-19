@@ -1,0 +1,41 @@
+<section class="leadspace-blog bg-mint">
+    <div class="container py-6 py-md-10 py-xl-30">
+        <div class="row">
+            <div class="col-12 @@col1 @@col2 @@offset1 @@offset2 leadspace-blog__z-index--below">
+                <figure class="ratio ratio-4x3 leadspace-blog__image-container">
+                    <img src="@@imgSrc" alt="@@altText" />
+                </figure>
+            </div>
+            <div class="col-12 col-md-8 @@offset3 @@leadspace-blog__negativeMargin leadspace-blog__z-index--above">
+                @@if(onlyHeading === true){
+                <div class="leadspace-blog__heading bg-sky text-white p-6 p-md-10 p-xl-20">
+                    <h1 class="h2 mb-0">@@heading</h1>
+                </div>
+                } @@if(headingDescription === true){
+                <div class="leadspace-blog__heading bg-sky text-white p-6 p-md-10 p-xl-20">
+                    <h1 class="h2 mb-0">@@heading</h1>
+                    <p class="body-xl mt-4 mt-md-6">
+                        We’re always looking for new problems to solve and great people to add to our team. Let us know
+                        how we can help!
+                    </p>
+                </div>
+                }
+            </div>
+            @@if (description === true){
+            <div class="col-12 col-xl-10 offset-xl-1">
+                <div class="leadspace-blog__description bg-white p-6 py-md-10 px-md-20">
+                    <p class="leadspace-blog__date text-uppercase fw-semibold mb-6">november 11, 2021</p>
+                    <p class="body mb-6">
+                        Morbi pellentesque justo non magna iaculis efficitur in quis magna. Vivamus consectetur placerat
+                        iaculis. Aenean in orci et libero auctor elementum non in diam. Suspendisse vel urna luctus,
+                        tristique purus a, commodo metus. Nam commodo turpis eget magna placerat, quis molestie mauris
+                        volutpat
+                    </p>
+                    @@include('../components/button.html',{ 'type':'btn-secondary', 'label':'Read more',
+                    'icon':true,'link':'' })
+                </div>
+            </div>
+            } @@if(contactForm === true){ @@include('../section/contact-form.html') }
+        </div>
+    </div>
+</section>

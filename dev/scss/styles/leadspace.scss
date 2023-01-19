@@ -1,0 +1,47 @@
+@import '../common-imports';
+
+.leadspace {
+    .ratio {
+        &-394x287 {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: 72.94%;
+            }
+            @include media-breakpoint-up(xl) {
+                --bs-aspect-ratio: 81.68%;
+            }
+        }
+        &-509x287 {
+            @include media-breakpoint-up(xl) {
+                --bs-aspect-ratio: 52.65%;
+            }
+        }
+    }
+    &__image {
+        &--1 {
+            @include media-breakpoint-up(md) {
+                max-width: 39.44rem;
+            }
+            @include media-breakpoint-up(xl) {
+                max-width: 48.6rem;
+            }
+        }
+        &--2 {
+            @include media-breakpoint-up(md) {
+                max-width: 50.96rem;
+            }
+            @include media-breakpoint-up(xl) {
+                max-width: 75.4rem;
+            }
+        }
+    }
+    &__border {
+        &__top {
+            &--sky {
+                border-top: 0.8rem solid $sky;
+            }
+            &--dark {
+                border-top: 0.8rem solid $space;
+            }
+        }
+    }
+}

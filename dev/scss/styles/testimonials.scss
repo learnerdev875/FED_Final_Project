@@ -1,0 +1,40 @@
+@import '../common-imports';
+.testimonials {
+    &__image {
+        background: $teal;
+        width: 16.9rem;
+        @include media-breakpoint-up(md) {
+            width: 26rem;
+        }
+        &--img {
+            width: 15.3rem;
+            aspect-ratio: 1/1;
+            position: relative;
+            left: 1rem;
+            @include media-breakpoint-up(md) {
+                width: 23.6rem;
+            }
+        }
+    }
+    &__social-links {
+        display: inline-flex;
+        gap: 1.2rem;
+    }
+    .container {
+        padding-top: 4.3rem;
+        padding-bottom: 5.849rem;
+        @include media-breakpoint-up(md) {
+            padding-top: 5.532rem;
+            padding-bottom: 6.668rem;
+        }
+        @include media-breakpoint-up(xl) {
+            padding-top: 8.4rem;
+            padding-bottom: 9.3rem;
+        }
+    }
+    &__description {
+        @include media-breakpoint-up(md) {
+            max-width: 90%;
+        }
+    }
+}

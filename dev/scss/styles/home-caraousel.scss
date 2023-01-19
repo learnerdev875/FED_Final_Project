@@ -1,0 +1,62 @@
+@import '../common-imports';
+.home-carousel {
+    &__paddingLeft {
+        @include media-breakpoint-up(xl) {
+            margin-left: 2.8rem;
+        }
+    }
+    &__image {
+        &__maxWidth {
+            // max-width: 32.7rem;
+            @include media-breakpoint-up(md) {
+                max-width: 47.2rem;
+                // width: 47.2rem;
+            }
+            @include media-breakpoint-up(md) {
+                max-width: 56.4rem;
+            }
+        }
+    }
+    &--border-top {
+        border-top: 0.8rem solid $sky;
+    }
+    .ratio {
+        &-327x281 {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: calc(588 / 472 * 100%);
+            }
+            @include media-breakpoint-up(xl) {
+                --bs-aspect-ratio: calc(496 / 564 * 100%);
+            }
+        }
+    }
+    &__border {
+        &-top {
+            border-top: 0.8rem solid $sky;
+        }
+    }
+    .carousel-indicators {
+        position: unset;
+        button {
+            border-radius: 50%;
+        }
+    }
+    .carousel-control-prev {
+        position: unset;
+        width: unset;
+        i {
+            background-color: white;
+            padding: 12px;
+            border-radius: 50%;
+        }
+    }
+    .carousel-control-next {
+        position: unset;
+        width: unset;
+        i {
+            background-color: white;
+            padding: 12px;
+            border-radius: 50%;
+        }
+    }
+}

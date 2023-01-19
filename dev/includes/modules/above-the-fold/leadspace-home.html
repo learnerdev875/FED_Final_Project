@@ -1,0 +1,48 @@
+<section class="leadspace bg-blush">
+    <div class="container py-8 py-md-10 py-xl-20">
+        <div class="row pb-6 pb-md-10 pb-xl-16 @@reverse">
+            <div class="col-12 col-md-5">
+                <figure class="w-100 ratio ratio-394x287 h-100">
+                    <img src="@@img1" alt="Hero Image 1" class="leadspace__image--1"/>
+                </figure>
+            </div>
+            <div class="col-md-7 d-none d-md-block">
+                <figure class="ratio ratio-509x287 h-100">
+                    <img src="@@img2" alt="Hero Image 2" class="leadspace__image--2" />
+                </figure>
+            </div>
+        </div>
+        <div class="row @@reverse">
+            <div class="col-12 col-xl-8">
+                <div class=" @@backgroundColor @@borderTop @@py px-6 px-md-10 py-xl-20 px-xl-20 @@whiteText">
+                    <h2 class="fw-normal mb-4">
+                        <!-- From the depths of the Earth to outer space, we are building the barely possible. -->
+                        @@heading
+                    </h2>
+                    <p class="body-xl mb-md-6 mb-xl-10">@@paragraph</p>
+                    @@if(paragraphShow === true){
+                        <p class="body-xl mb-0 d-md-none">@@paragraph2</p>
+                    }
+                    @@if(home === true){
+                        @@include('../components/button.html',{ 
+                        'link':'',
+                        'icon':true,
+                        'label':'Contact Us',
+                        'type':'btn-secondary'
+                    })
+                    }
+                    @@if(aboutBtn === true){
+                            <a href="#" class="btn btn-outline-primary d-none d-md-inline-block">
+                                Contact Us <i class="icon-arrow-right ps-2"></i>
+                        </a>
+                    }
+                </div>
+            </div>
+            <div class="d-none d-xl-block col-xl-4">
+                <figure class="ratio ratio-1x1" style="max-width: 376px">
+                    <img src="@@img3" alt="Hero Image 3" />
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

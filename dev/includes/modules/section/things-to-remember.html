@@ -1,0 +1,23 @@
+<section class="things-to-remember bg-mint">
+    <div class="container py-10 py-md-20 py-xl-30">
+        <div class="row">
+            <div class="col-12 col-md-6 mt-0 mb-10">
+                <figure class="ratio ratio-4x3 things-to-remember__image--drop-shadow">
+                    <img src="@@imgSrc" alt="altText" />
+                </figure>
+            </div>
+            <div class="col-12 col-md-6 mt-0 d-xl-flex flex-xl-column justify-content-xl-center">
+                <div class="eyebrow mb-6">@@eyebrow</div>
+                <h2 class="h4 mb-0 mb-6 things-to-remember__heading">@@heading</h2>
+                <p class="body mb-0 mb-6">
+                    <span class="d-block text-sky mb-6">Nov 11, 2021</span>
+                    @@body
+                </p>
+                <div>
+                    @@include('../components/button.html',{ 'type':' btn-secondary', 'label':'@@label', 'icon':true,
+                    'link':'single-blog.html' })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

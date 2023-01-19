@@ -1,0 +1,43 @@
+@import '../common-imports';
+.a {
+    &__about-our-services {
+        &__heading {
+            border-bottom: 0.1rem solid $blush;
+        }
+        .ratio {
+            &-327x230 {
+                @include media-breakpoint-up(md) {
+                    --bs-aspect-ratio: 53%;
+                }
+                @include media-breakpoint-up(xl) {
+                    --bs-aspect-ratio: 38.71%;
+                }
+            }
+        }
+        &__image {
+            @include media-breakpoint-up(md) {
+                max-width: 90.4rem;
+                max-height: 48rem;
+            }
+            @include media-breakpoint-up(xl) {
+                max-width: 124rem;
+            }
+        }
+        &__description {
+            @include media-breakpoint-up(md) {
+                max-width: 50.4rem;
+                margin-left: auto;
+            }
+            @include media-breakpoint-up(xl) {
+                max-width: unset;
+            }
+        }
+        &__service {
+            &--bottom-row {
+                .border__bottom {
+                    border-bottom: 0.1rem solid $blush;
+                }
+            }
+        }
+    }
+}

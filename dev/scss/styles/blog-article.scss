@@ -1,0 +1,43 @@
+@import '../common-imports';
+
+.blog-article {
+    border-top: 0.8rem solid #75e6ed;
+    @include media-breakpoint-up(md) {
+        border-top: 0;
+    }
+    &__figure {
+        &__container {
+            background-color: $mint;
+            @include media-breakpoint-up(md) {
+                background-color: #fff;
+            }
+        }
+        &__caption {
+            max-width: 30.3rem;
+            font-weight: 500;
+            @include media-breakpoint-up(md) {
+                max-width: unset;
+            }
+        }
+    }
+    &__image {
+        @include media-breakpoint-up(md) {
+            box-shadow: 8px 8px 0px 0px #eaefed;
+        }
+    }
+    .ratio {
+        &-3x2 {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: 47%;
+            }
+        }
+    }
+    &__list {
+        li {
+            list-style-type: disc;
+            &::marker {
+                color: $space;
+            }
+        }
+    }
+}

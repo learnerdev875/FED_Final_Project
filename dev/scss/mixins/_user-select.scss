@@ -1,0 +1,9 @@
+// User Select
+// The user-select property in CSS controls how the text in an element is allowed to be selected. For example, it can be used to make text unselectable.
+/* Examples: 
+    @include user-select(none);
+    @include user-select(all);
+*/
+@mixin user-select($user-select) {
+    user-select: ($user-select);
+}

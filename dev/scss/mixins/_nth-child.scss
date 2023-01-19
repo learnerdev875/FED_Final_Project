@@ -1,0 +1,19 @@
+// Evens
+// @include evens() {
+//     background: red;
+// }
+@mixin even() {
+    &:nth-child(even) {
+        @content;
+    }
+}
+
+// Odds
+// @include odd() {
+//     background: red;
+// }
+@mixin odd() {
+    &:nth-child(odd) {
+        @content;
+    }
+}

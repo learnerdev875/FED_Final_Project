@@ -1,0 +1,12 @@
+.blogs {
+    .container {
+        .row {
+            justify-content: space-between;
+            div:last-child {
+                figure {
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

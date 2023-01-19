@@ -1,0 +1,43 @@
+<div class="contact-form col-12">
+    <form class="bg-white contact-form__container p-6 p-md-10 p-xl-20">
+        <div class="form-group mb-11 contact-form__select--services">
+            <label for="services" class="h5 d-block fw-bold mb-4">Let's talk about</label>
+            <select name="services" id="services" class="p-4 w-100 fw-bold border-1">
+                <option value="project inquiries">Project inquiries</option>
+                <option value="careers">Careers</option>
+                <option value="media">Media</option>
+                <option value="Partnership">Partnership</option>
+            </select>
+        </div>
+        <div class="form-group mb-6 d-md-inline-block me-md-10 contact-form__input--first-name">
+            <label for="first-name" class="d-block fw-bold mb-2">First name</label>
+            <input type="text" name="first-name" id="fname" placeholder="Jane" class="w-100 py-3 ps-3 body-xl" />
+        </div>
+        <div class="form-group mb-6 d-md-inline-block contact-form__input--last-name">
+            <label for="last-name" class="d-block fw-bold mb-2">Last name</label>
+            <input type="text" name="last-name" id="lname" placeholder="Doe" class="w-100 py-3 ps-3 body-xl" />
+        </div>
+        <div class="form-group mb-6">
+            <label for="email" class="d-block fw-bold mb-2">Email</label>
+            <input type="email" name="email" id="email" placeholder="jane@domain.com" class="w-100 py-3 ps-3 body-xl" />
+        </div>
+        <div class="form-group mb-6">
+            <label for="message" class="d-block fw-bold mb-2">Message</label>
+            <input
+                type="text"
+                name="message"
+                id="message"
+                placeholder="How can we help?"
+                class="w-100 py-3 ps-3 body-xl"
+            />
+        </div>
+        <p class="mb-6 caption contact-form__caption">
+            This site is protected by reCAPTCHA and the Google
+            <a href="#" class="text-underline text-sky">Privacy Policy</a>
+            and
+            <a href="#" class="text-underline text-sky">Terms of Service</a>
+            apply.
+        </p>
+        @@include('../components/button.html',{ 'type':'btn-secondary', 'label':'Submit', 'icon':true })
+    </form>
+</div>

@@ -1,0 +1,15 @@
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+index.html
+blogs.html
+about.html
+blog-listing.html
+more-blogs.html
+single-blog.html
+related-blogs.html
+contact.html
+leadspace-home.html
+about-us.html

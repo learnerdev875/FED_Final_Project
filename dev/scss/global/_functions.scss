@@ -1,0 +1,24 @@
+// Generates zindex from 1 to 10
+$class-slug: zindex !default;
+
+// eg. .zindex-1, .zindex-10
+@for $i from 0 through 10 {
+    .#{$class-slug}-#{$i} {
+        z-index: $i !important;
+    }
+}
+// eg. .zindex-n-1, .zindex-n-2
+@for $i from 1 through 10 {
+    .#{$class-slug}-n-#{$i} {
+        z-index: -$i !important;
+    }
+}
+
+// Black & White Opacity [background: black(.75);]
+@function black($opacity) {
+    @return rgba(0, 0, 0, $opacity);
+}
+
+@function white($opacity) {
+    @return rgba(255, 255, 255, $opacity);
+}

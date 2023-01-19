@@ -1,0 +1,38 @@
+.btn {
+    font-size: 1.8rem;
+    line-height: 1.56;
+    font-weight: 600;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0;
+    border-width: 0.2rem;
+    border-style: solid;
+    &-primary {
+        background-color: $sky;
+        color: $white;
+        border: none;
+        &:hover {
+            background-color: $teal;
+        }
+    }
+    &-secondary {
+        background: transparent;
+        color: $space;
+        &:hover {
+            border-color: $teal;
+            color: $teal;
+            background: transparent;
+        }
+    }
+    &-outline {
+        &-primary {
+            border-color: $white;
+            color: $white;
+            background: transparent;
+            &:hover {
+                border-color: $white;
+                background: transparent;
+                color: $white;
+            }
+        }
+    }
+}

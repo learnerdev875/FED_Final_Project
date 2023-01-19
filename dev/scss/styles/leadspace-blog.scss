@@ -1,0 +1,56 @@
+@import '../common-imports';
+.leadspace-blog {
+    &__heading {
+        border-top: 0.8rem solid $space;
+    }
+    &_date {
+        font-size: 1.8rem;
+    }
+    &__description {
+        box-shadow: 0.8rem 0.8rem 0rem 0rem rgba(234, 239, 237, 1);
+        // @include box-shadow(8px 8px 0px 0px rgba(234, 239, 237, 1));
+        //mixin not working
+    }
+    &__image {
+        &-container {
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    .ratio {
+        &-4x3 {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: 56.25%;
+            }
+        }
+    }
+    &__negativeMargin {
+        &--blogs {
+            @include media-breakpoint-up(md) {
+                margin-top: -10rem;
+            }
+            @include media-breakpoint-up(xl) {
+                margin-top: -20rem;
+            }
+        }
+        &--contact {
+            @include media-breakpoint-up(md) {
+                margin-top: -3rem;
+            }
+            @include media-breakpoint-up(xl) {
+                margin-top: -3.6rem;
+            }
+        }
+    }
+    &__z-index {
+        &--below {
+            z-index: 1;
+            position: relative;
+        }
+        &--above {
+            z-index: 2;
+            position: relative;
+        }
+    }
+}

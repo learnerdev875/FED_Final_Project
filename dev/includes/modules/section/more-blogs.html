@@ -1,0 +1,63 @@
+<section class="more-blogs">
+    <div class="container pt-10 pt-md-20 pt-xl-120">
+        <h2 class="h6 text-uppercase fw-semibold mb-10 mb-md-20">more blog notes</h2>
+        <div class="more-blogs__category d-md-flex align-items-center">
+            <p class="body mb-7 mb-md-0">Category:</p>
+            <div class="more-blogs__category-links">
+                <ul class="text-uppercase d-flex flex-wrap ps-0 mb-0">
+                    <li class="h6 mb-0 fw-semibold pe-6">news</li>
+                    <li class="h6 mb-0 fw-semibold pe-8">travel</li>
+                    <li class="h6 mb-0 fw-semibold pe-6">blogs</li>
+                    <li class="h6 mb-0 fw-semibold pe-6">facts</li>
+                    <li class="h6 mb-0 fw-semibold">global</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row gy-10">
+            <div class="col-12 col-md-7 col-xl-5">
+                <div class="more-blogs__search">
+                    <input type="search" class="w-100">
+                    <i class="icon-search"></i>
+                </div>
+            </div>
+            <div class="col-2 offset-7 offset-md-3 offset-xl-5">
+                <div class="dropdown d-flex align-items-center more-blogs__dropdown transform-none">
+                    <h4 class="h6 text-uppercase fw-semibold mb-0 ms-auto pe-2">latest</h4>
+                      <i class="icon-down-tip " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    <ul class="dropdown-menu bg-mint text-uppercase more-blogs__dropdown__list" aria-labelledby="dropdownMenuButton1">
+                      <li class="pb-3"><a class="dropdown-item h6 fw-semibold" href="#">Alphabetical order</a></li>
+                      <li class="pb-3 pt-3"><a class="dropdown-item h6 fw-semibold" href="#">Featured</a></li>
+                      <li class="pb-3 pt-3"><a class="dropdown-item h6 fw-semibold" href="#">Latest</a></li>
+                      <li class="pt-3"><a class="dropdown-item h6 fw-semibold" href="#">oldest</a></li>
+                    </ul>
+                  </div>
+                
+            </div>
+        </div>
+        <div class="row gx-10 gy-10 gy-md-20 mb-6 mb-md-20">
+          
+            @@for(var i = 0; i < blogs.blogList.length;i++){
+                @@include('../cards/blog-card.html',
+                `+(JSON.stringify(blogs.blogList[i]))+`)
+            }
+        </div>
+        <div class="more-blogs__pagination d-flex justify-content-between align-items-center justify-content-md-center mb-5 mb-md-22 mb-xl-32">
+            <div class="more-blogs__pagination_icon-left bg-space p-3 rounded-circle d-inline-flex align-items-center">
+                <i class="icon-left-arrow text-white"></i>
+            </div>
+            <div class="more-blogs__pagination__numbers d-flex px-md-18">
+                <span class="text-underline">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+            </div>
+            <div class="more-blogs__pagination_icon-right bg-space p-3 rounded-circle d-inline-flex align-items-center">
+                <i class="icon-arrow-right text-white"></i>
+            </div>
+            
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="about-us">
+    <div class="container py-10 py-md-20 py-xl-30">
+        <div class="row justify-content-xl-between gy-10 gy-md-0 gx-md-10">
+            <div class="col-12 col-md-6">
+                <div class="about-us__content py-md-10 py-xl-2">
+
+                    <p class="eyebrow mb-10">about us</p>
+                    <h3 class="fw-normal mb-10 about-us__heading">
+                        Integer at neque ac metus fringilla dapibus et eu eros. Vivamus vitae finibus dolor. Suspendisse
+                        finibus ante in sapien fermentum, quis condimentum turpis consequat.
+                    </h3>
+                    @@include('../components/button.html',{ 
+                        'link':'about.html', 
+                        'type':'btn-primary',
+                        'label':'Learn more',
+                        'icon':true 
+                })
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-5">
+                <div class="about-us__video__container bg-moon py-6 px-6">
+
+                    <p class="eyebrow pb-4 mb-0">how about us?</p>
+                    <figure class="ratio ratio-16x9">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/pvuN_WvF1to"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

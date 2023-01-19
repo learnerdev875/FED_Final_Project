@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Final Assignment | Single Blog'})
+    </head>
+    <body>
+        @@include('includes/modules/components/nav-bar.html')
+        <main class="theme-main">
+            @@include('includes/modules/above-the-fold/leadspace-blog.html',{ 
+            'heading':'Interesting Facts I Bet You Never Knew About BLOGS',
+            'onlyHeading':true,
+            'headingDescription':false,
+            'description':false, 
+            'imgSrc':'images/single-blog-leadspace.jpeg',
+            'altText':'Girl with a cycle',
+            'col1':'col-md-9',
+            'col2':'col-xl-8',
+            'offset1':'',
+            'offset2':'',
+            'offset3':'offset-md-4',
+            'leadspace-blog__negativeMargin':'leadspace-blog__negativeMargin--blogs',
+            'contactForm':false
+            })
+            @@include('includes/modules/section/blog-article.html')
+            @@include('includes/modules/section/related-blogs.html')
+        </main>
+        @@include('includes/footer.html') @@include('includes/scripts.html')
+    </body>
+</html>

@@ -1,0 +1,78 @@
+@import '../common-imports';
+.#{$global} {
+    &-footer {
+        padding: 3rem 0;
+        h6 {
+            @include media-breakpoint-up(xl) {
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+        }
+
+        &__links {
+            display: none;
+            padding: 0;
+
+            li {
+                a {
+                    text-decoration: underline !important;
+                    text-underline-offset: 0.4rem;
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                display: block;
+            }
+        }
+        &__copyright {
+            padding-top: 12.4rem;
+            p {
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &__contact {
+            @include media-breakpoint-up(xl) {
+                padding-top: 8rem;
+            }
+        }
+        &__sign-up-container {
+            p {
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.8rem;
+                }
+            }
+            &--form {
+                display: flex;
+                flex-direction: column;
+                gap: 2.4rem;
+                @include media-breakpoint-up(md) {
+                    flex-direction: row;
+                    gap: 1.6rem;
+                }
+                input {
+                    padding-block: 0.8rem;
+                    padding-inline-start: 1.2rem;
+                    background-color: transparent;
+                    border: 0.2rem solid #fff;
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 1;
+                        font-size: 1.8rem;
+                        font-style: italic;
+                    }
+                    @include media-breakpoint-up(md) {
+                        flex: 1;
+                    }
+                }
+                button {
+                    background: transparent;
+                    color: #fff;
+                    padding: 0.8rem 1.6rem;
+                    border: 2px solid #fff;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}

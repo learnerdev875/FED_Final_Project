@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Final Assignment | Blog-Listing'})
+    </head>
+    <body>
+        @@include('includes/modules/components/nav-bar.html')
+        <main class="theme-main">
+            @@include('includes/modules/above-the-fold/leadspace-blog.html',{
+                'heading':'Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.',
+                'onlyHeading':true,
+                'headingDescription':false,
+                'description':true,
+                'imgSrc':'images/leadspace-blog.png',
+                'altText':'Leadspace Blog',
+                'col1':'col-md-9',
+                'col2':'col-xl-8',
+                'offset1':'',
+                'offset2':'',
+                'offset3':'offset-md-4',
+                'leadspace-blog__negativeMargin':'leadspace-blog__negativeMargin--blogs',
+                'contactForm':false
+            })
+            @@include('includes/modules/section/more-blogs.html',{
+                'blogs':{
+                    'blogList':[
+                        {
+                            imgSrc:'images/blog-card-1.png',
+                            alt:'Blog Card 1',
+                            title:'Interesting Facts I Bet You Never Knew About BLOGS'
+                        },
+                        {
+                            imgSrc:'images/blog-card-2.png',
+                            alt:'Blog Card 2',
+                            title:'Everything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask'
+                        },
+                        {
+                            imgSrc:'images/blog-card-3.png',
+                            alt:'Blog Card 3',
+                            title:'What Can You Do To Save Your BLOGS From Destruction By Social Media?'
+                        },
+                        {
+                            imgSrc:'images/blog-card-4.png',
+                            alt:'Blog Card 4',
+                            title:'White Paper: Call to NASA for Low-Cost Innovation, New Talent Pipeline in Missions'
+                        },
+                        {
+                            imgSrc:'images/blog-card-5.png',
+                            alt:'Blog Card 5',
+                            title:'Becoming Friends with a Mars Rover'
+                        },
+                        {
+                            imgSrc:'images/blog-card-6.png',
+                            alt:'Blog Card 6',
+                            title:'Some Assembly Required: Documentation in Mars Rover Design'
+                        }
+                    ]
+                }
+            })
+            @@include('includes/modules/section/hiring-banner.html',{ 
+            'background':'bg-mint',
+            'heading':'Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.',
+            'paragraph':'Integer at neque ac metus fringilla dapibus et eu eros.',
+            'label':'Contact'
+         })
+        </main>
+        @@include('includes/footer.html') @@include('includes/scripts.html')
+    </body>
+</html>

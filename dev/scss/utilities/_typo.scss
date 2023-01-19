@@ -1,0 +1,141 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+    @extend %heading;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 3.5rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 5.5rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 2.8rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    @include media-breakpoint-up(xl) {
+        font-size: 4.4rem;
+        line-height: 1.16;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 2.4rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    @include media-breakpoint-up(xl) {
+        font-size: 3.5rem;
+        line-height: 1.14;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    @include media-breakpoint-up(xl) {
+        font-size: 2.8rem;
+        line-height: 1.14;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.8rem;
+    line-height: 1.11;
+    @include media-breakpoint-up(xl) {
+        font-size: 2.3rem;
+        line-height: 1.22;
+    }
+}
+
+h6,
+.h6,
+.eyebrow {
+    font-size: 1.6rem;
+    line-height: 1.19;
+    letter-spacing: 0.1em;
+    @include media-breakpoint-up(xl) {
+        font-size: 1.8rem;
+        line-height: 1.22;
+    }
+}
+.eyebrow {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.quote {
+    &-1 {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        @include media-breakpoint-up(xl) {
+            font-size: 3.6rem;
+            line-height: 4rem;
+        }
+    }
+}
+
+.button,
+.btn {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    @include media-breakpoint-up(xl) {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    @extend .transition-fast;
+}
+
+.body-xl {
+    font-size: 2.3rem;
+    line-height: 1.4;
+    @include media-breakpoint-up(xl) {
+        font-size: 2.8rem;
+    }
+}
+.body-l {
+    font-size: 2rem;
+    line-height: 1.5;
+    @include media-breakpoint-up(xl) {
+        font-size: 2.3rem;
+    }
+}
+.body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    @include media-breakpoint-up(xl) {
+        font-size: 1.8rem;
+    }
+}
+.caption {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}

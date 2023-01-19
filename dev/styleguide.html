@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('includes/head.html',{'pageTitle':'FED Starter Kit- Development Guidelines'})
+    <link rel="stylesheet" href="css/styleguide.min.css?v=2025" />
+  </head>
+
+  <body>
+    <div class="theme-app d-flex flex-column">
+      <div class="theme-wrap">
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+        <main class="theme-main pt-0">
+          <div class="styleguide-wrap">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <header class="styleguide-header">
+                    <h4 class="mb-0 text-primary">FED Starter Kit - Development Guidelines</h4>
+                  </header>
+                </div>
+              </div>
+
+              <div class="row justify-content-lg-between">
+                <div class="col-lg-2">
+                  <aside class="sidebar sticky-top">
+                    <ul class="list-group list-unstyled" id="anchorListWrap">
+                      <li class="list-group-item">
+                        <a href="#branding" class="anchor-link">Branding and Colors</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#typography" class="anchor-link">Typography</a>
+                      </li>
+                     
+                      <li class="list-group-item">
+                        <a href="#icons" class="anchor-link">Icon Lists</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#components" class="anchor-link">Reusable Components</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#forms" class="anchor-link">Forms</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#grid" class="anchor-link">Grid Systems</a>
+                      </li>
+                    </ul>
+                  </aside>
+                </div>
+
+                <div class="col-lg-10">
+                  <div class="ps-5">
+                    <section class="content-wrap" id="branding">
+                      <div class="row">
+                        <div class="col">
+                          <header class="mb-5">
+                            <h3 class="mb-0">Branding and colors</h3>
+                          </header>
+                          <div class="row mb-5">
+                            <div class="col-md-3 mb-5">
+                              <span class="bg-primary d-block px-4 py-4 text-white">
+                                <strong class="d-block">Primary</strong>
+                                <small class="mb-4 d-block">
+                                  <i>$primary</i>
+                                  <span class="font-size-12 d-block mb-1">#002b49</span>
+                                </small>
+                                <code>.bg-primary</code>
+                              </span>
+                            </div>
+                            <div class="col-md-3 mb-5">
+                              <span class="bg-secondary d-block px-4 py-4 text-white">
+                                <strong class="d-block">Secondary</strong>
+                                <small class="mb-4 d-block">
+                                  <i>$secondary</i>
+                                  <span class="font-size-12 d-block mb-1">#00a6cb</span>
+                                </small>
+                                <code>.bg-secondary</code>
+                              </span>
+                            </div>
+                            <div class="col-md-3 mb-5">
+                              <span class="bg-success d-block px-4 py-4 text-white">
+                                <strong class="d-block">Success</strong>
+                                <small class="mb-4 d-block">
+                                  <i>$success</i>
+                                  <span class="font-size-12 d-block mb-1">#a7a7b3</span>
+                                </small>
+                                <code>.bg-success</code>
+                              </span>
+                            </div>
+                            <div class="col-md-3 mb-5">
+                              <span class="bg-danger d-block px-4 py-4 text-white">
+                                <strong class="d-block">Danger</strong>
+                                <small class="mb-4 d-block">
+                                  <i>$danger</i>
+                                  <span class="font-size-12 d-block mb-1">#f1eff4</span>
+                                </small>
+                                <code>.bg-danger</code>
+                              </span>
+                            </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="content-wrap" id="typography">
+                      <div class="row gb-5">
+                        <div class="col-12">
+                          <header class="mb-5">
+                            <h3 class="mb-0">Typography</h3>
+                          </header>
+                        </div>
+                        <div class="col-12">
+                          <div class="mb-8">
+                            <h1>h1 - Heading 1</h1>
+                            <p class="text-secondary">Desktop - XL 64px/64px Mobile/tablet 44px/28px</p>
+                          </div>
+                          <div class="mb-8">
+                            <h2>h2 - Heading 2</h2>
+                            <p class="text-secondary">Desktop - XL 44px/44px Mobile/tablet 28px/28px</p>
+                          </div>
+                          <div class="mb-8">
+                            <h3>h3 - Heading 3</h3>
+                            <p class="text-secondary">Desktop - XL 36px/36px Mobile/tablet 26px/26px</p>
+                          </div>
+                          <div class="mb-8">
+                            <h4>h4 - Heading 4</h4>
+                            <p class="text-secondary">Desktop - XL 30px/30px Mobile/tablet 24px/24px</p>
+                          </div>
+                          <div class="mb-8">
+                            <h5>h5 - Heading 5</h5>
+                            <p class="text-secondary">Desktop - XL 26px/28px Mobile/tablet 23px/23px</p>
+                          </div>
+                          <div class="mb-8">
+                            <h6>h6 - Heading 66</h6>
+                            <p class="text-secondary">Desktop - XL 20px/24px Mobile/tablet  16px/20px</p>
+                          </div>
+                        </div>
+
+                        <hr class="my-10" />
+
+                        <header class="mb-7">
+                          <h3 class="mb-0">Quote</h3>
+                        </header>
+                        <h2 class="quote quote-1">Dolorum perspiciatis saepe reiciendis natus corrupti incidunt explicabo libero cupiditate sit deserunt doloribus, molestias ab tenetur sunt officia voluptate.</h2>
+                        <pre>
+                          <code>&lt;div class="quote quote-1"&gt;Repudiandae nihil enim tempora.&lt;/h5&gt;</code>
+                        </pre>
+
+                        <hr class="my-10" />
+
+                        <h4>Inline text elements</h4>
+                        <p>
+                          You can use the mark tag to
+                          <mark>highlight</mark>
+                          text.
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+                            </code>
+                        </pre>
+                        <p>
+                          <s>This line of text is meant to be treated as no longer accurate.</s>
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+                            </code>
+                        </pre>
+                        <p><u>This line of text will render as underlined</u></p>
+                        <pre>
+                            <code>
+                                &lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+                            </code>
+                        </pre>
+                        <p>
+                          <small>This line of text is meant to be treated as fine print.</small>
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+                            </code>
+                        </pre>
+                        <p><strong>This line rendered as bold text.</strong></p>
+                        <pre>
+                            <code>
+                                &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+                            </code>
+                        </pre>
+                        <p><em>This line rendered as italicized text.</em></p>
+                        <pre>
+                            <code>
+                                &lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+                            </code>
+                        </pre>
+
+                        <hr class="my-5" />
+                        <h6>Lists</h6>
+                        <div class="row">
+                          <div class="col-md-8">
+                            <ul>
+                              <li>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ad animi maxime
+                                harum quaerat impedit sit exercitationem dignissimos odit rem.
+                              </li>
+                              <li>Consectetur adipiscing elit</li>
+                              <li>Integer molestie lorem at massa</li>
+                              <li>Facilisis in pretium nisl aliquet</li>
+                              <li>Phasellus iaculis neque</li>
+                              <li>Vestibulum laoreet porttitor sem</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <hr class="my-10" />
+                        <h2><span class="eyebrow d-block text-primary mb-3">Eyebrow Example Industries</span> Digital Banking</h2>
+                        <h4 class="mt-5">Normal Paragraphs</h4>
+                        <p>Consectetur adipisicing elit. Mollitia, voluptate dolor architecto excepturi adipisci pariatur laboriosam quos quo nulla? Ab vero temporibus animi voluptatibus dicta vitae possimus eveniet aliquam quam molestiae, dolores sapiente reiciendis error vel incidunt soluta nesciunt recusandae necessitatibus, quasi maxime, voluptatum esse sint autem excepturi. Nihil, blanditiis.</p>
+                        <p>Consectetur adipisicing elit. Mollitia, voluptate dolor architecto excepturi adipisci pariatur laboriosam quos quo nulla? Ab vero temporibus animi voluptatibus dicta vitae possimus eveniet aliquam quam molestiae, dolores sapiente reiciendis error vel incidunt soluta nesciunt recusandae necessitatibus, quasi maxime, voluptatum esse sint autem excepturi. Nihil, blanditiis.</p>
+
+                        <hr class="my-10" />
+
+
+                        <h4 class="mt-5 mb-3">Text Colors</h4>
+                        <div class="p-5 border border-brown-grey" style="background-color: #bbb">
+                          <p class="text-primary">
+                            .text-primary -
+                            <strong>$primary</strong>
+                          </p>
+                          <p class="text-secondary">
+                            .text-secondary -
+                            <strong>$secondary</strong>
+                          </p>
+                          <p class="text-success">
+                            .text-success -
+                            <strong>$success</strong>
+                          </p>
+                          <p class="text-danger">
+                            .text-danger -
+                            <strong>$danger</strong>
+                          </p>
+                          <p class="text-white">
+                            .text-white -
+                            <strong>$white</strong>
+                          </p>
+                          <p class="text-black">
+                            .text-black -
+                            <strong>$black</strong>
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="content-wrap" id="icons">
+                        <div class="row">
+                            <div class="col">
+                                <header class="mb-5">
+                                    <h3 class="mb-0">Icon Lists</h3>
+                                </header>
+                                <div class="row mb-5">
+                                    <div class="col-sm-6 col-md-3 mb-5">
+                                        <span class="d-block py-2">
+                                            <i class="icon-play font-size-30"></i>
+                                        </span>
+                                        <code>&lt;i class=&quot;icon-play&quot;&gt;&lt;/i&gt;</code>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-5">
+                                        <span class="d-block py-2">
+                                            <i class="icon-tick font-size-30"></i>
+                                        </span>
+                                        <code>&lt;i class=&quot;icon-tick&quot;&gt;&lt;/i&gt;</code>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-5">
+                                        <span class="d-block py-2">
+                                            <i class="icon-plus font-size-30"></i>
+                                        </span>
+                                        <code>&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;</code>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-5">
+                                        <span class="d-block py-2">
+                                            <i class="icon-close font-size-30"></i>
+                                        </span>
+                                        <code>&lt;i class=&quot;icon-close&quot;&gt;&lt;/i&gt;</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content-wrap" id="components">
+                      <div class="row">
+                        <div class="col">
+                            <header class="mb-5">
+                                <h4 class="mb-10">Reusable Components</h4>
+                                <h3 class="mb-0">Normal Buttons</h3>
+                            </header>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="mb-2">Button Primary</h5>
+                                    <div class="bg-light p-5 mb-10">
+                                        <a href="#" class="btn btn-primary mr-3">Button Primary</a>
+                                        <pre class="p-0 mt-5">
+                                            <code>
+                                                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Button Primary&lt;/a&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="mb-2">Button Secondary</h5>
+                                    <div class="bg-light p-5 mb-10">
+                                        <a href="#" class="btn btn-secondary mr-3">Button Secondary</a>
+                                        <pre class="p-0 mt-5">
+                                            <code>
+                                                &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary&quot;&gt;Button Secondary&lt;/a&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="mb-2">Button Tertiary</h5>
+                                    <div class="bg-light p-5 mb-5">
+                                        <a href="#" class="btn btn-tertiary mr-3">Button Tertiary</a>
+                                        <a href="#" class="btn btn-tertiary btn-tertiary--alt mr-3">Button Tertiary Alt</a>
+                                        <pre class="p-0 mt-5">
+                                            <code>
+                                                &lt;a href=&quot;#&quot; class=&quot;btn btn-tertiary&quot;&gt;Button Tertiary&lt;/a&gt;
+                                                <br>
+                                                &lt;a href=&quot;#&quot; class=&quot;btn btn-tertiary btn-tertiary--alt&quot;&gt;Button Tertiary Alt&lt;/a&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h3 class="mt-10">Button With Arrow</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="bg-light p-5 mb-10">
+                                        <a href="#" class="btn btn-with-arrow d-inline-flex align-items-center text-center me-3">
+                                          <i class="icon-right"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-with-arrow inactive d-inline-flex align-items-center text-center">
+                                            <i class="icon-right"></i>
+                                        </a>
+                                        <pre class="p-0 mt-5">
+                                            <code>
+                                                &lt;a href=&quot;#&quot; class=&quot;btn btn-with-arrow&quot;&gt;Button With Arrow&lt;/a&gt;
+                                                <br>
+                                                &lt;a href=&quot;#&quot; class=&quot;btn btn-with-arrow inactive&quot;&gt;Button With Arrow Disabled&lt;/a&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          <hr class="mb-10" />
+                          <h4 class="mb-5">Links</h4>
+                          <p class="w-75">
+                            <a href="#" class="link-text text-primary link-text--large me-6">Contact Us</a>
+                            <a href="#" class="link-text text-secondary link-text--small">Contact Us</a>
+                            <pre class="mt-5 p-0">
+                                <code>
+                                    &lt;a href="#" class="link-text text-primary link-text--large"&gt;Button Large&lt;/a&gt;
+                                    <br>
+                                    &lt;a href="#" class="link-text text-secondary link-text--small"&gt;Button Small&lt;/a&gt;
+                                </code>
+                            </pre>
+                          </p>
+
+                          <div class="row mb-5">
+                            <div class="col">
+                              <hr class="my-5" />
+                              <h4 class="mb-5">Modal</h4>
+                              <p>
+                                Modal plugin to add dialogs to your site for lightboxes, user notifications, or
+                                completely custom content.
+                              </p>
+                              <!-- Button trigger modal -->
+                              <a href="#modalDemo"  class="btn btn-primary btn-modal" data-bs-toggle="modal">
+                                Launch demo modal
+                              </a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="row mb-5">
+                            <div class="col">
+                                <pre class="p-0">
+                                    <code>
+                                        &lt;a&nbsp;href=&quot;#modalDemo&quot;&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;btn-modal&quot;&nbsp;data-toggle=&quot;modal&quot;&gt;Launch&nbsp;demo&nbsp;modal&lt;/a&gt;<br/><br/>&lt;!--&nbsp;Modal&nbsp;--&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal&nbsp;fade&quot;&nbsp;id=&quot;modalDemo&quot;&nbsp;tabindex=&quot;-1&quot;&nbsp;aria-labelledby=&quot;modalDemoLabel&quot;&nbsp;aria-hidden=&quot;true&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-dialog&nbsp;modal-dialog-centered&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-content&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-header&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;close&quot;&nbsp;data-dismiss=&quot;modal&quot;&nbsp;aria-label=&quot;Close&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-body&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Modal&nbsp;Title&lt;/h2&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Commodi&nbsp;nam&nbsp;perferendis&nbsp;suscipit&nbsp;quasi&nbsp;harum&nbsp;itaque&nbsp;maxime,&nbsp;recusandae&nbsp;accusantium&nbsp;exercitationem&nbsp;illo&nbsp;quisquam&nbsp;labore&nbsp;laudantium&nbsp;possimus?&nbsp;Dolorem.&lt;/p&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="content-wrap" id="forms">
+                      <div class="row">
+                        <div class="col">
+                          <header class="mb-5">
+                            <h3 class="mb-0">Forms</h3>
+                          </header>
+
+                            <div class="bg-light p-5 mb-5">
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <form class="wpcf7-form init wpcf7-acceptance-as-validation">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="name" class="mb-2">Name*</label>
+                                                        <input type="text" class="form-control" placeholder="Firstname Lastname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="name" class="mb-2">Name*</label>
+                                                        <input type="text" class="form-control" placeholder="Firstname Lastname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="name" class="mb-2">Name*</label>
+                                                        <input type="text" class="form-control wpcf7-not-valid" placeholder="Firstname Lastname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="name" class="mb-2">Name*</label>
+                                                        <input type="text" class="form-control wpcf7-not-valid" placeholder="Firstname Lastname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <label for="name">Attachments</label>
+                                                        <span class="d-block info-spanner mb-4">Supported file types, max file size</span>
+                                                        <input type="file" class="form-control" placeholder="Firstname Lastname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-primary">  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <pre class="p-0">
+                                            <code>
+                                                &lt;form&nbsp;class=&quot;wpcf7-form&nbsp;init&nbsp;wpcf7-acceptance-as-validation&quot;&gt;<br/>
+                                                    &nbsp;&nbsp;&nbsp;&lt;div class=&quot;form-group mb-3&quot;&gt;<br/>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;name&quot;&gt;Attachments&lt;/label&gt;<br/>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;d-block info-spanner mb-4&quot;&gt;Supported file types, max file size&lt;/span&gt;<br/>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;name&quot; placeholder=&quot;Firstname Lastname&quot;&gt;<br/>
+                                                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                                                &lt;/form&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="content-wrap" id="grid">
+                      <div class="row">
+                        <div class="col">
+                          <header class="mb-5">
+                            <h4 class="text-primary mb-0">Grid system</h4>
+                            <p class="mb-0">Max container width - 1280px</p>
+                            <p># of columns - 12</p>
+                          </header>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">1</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">2</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">3</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">4</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">5</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">6</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">7</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">8</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">9</span>
+                        </div>
+                        <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">10</span>
+                        </div>
+                    <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">11</span>
+                        </div>
+                    <div class="col-md-1 text-center">
+                          <span class="bg-light d-block p-3">12</span>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <script
+        src="https://code.jquery.com/jquery-2.1.0.min.js"
+        integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $(function () {
+          $('a[href*=#]:not([href=#])').click(function () {
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+              location.hostname == this.hostname
+            ) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                $('html,body').animate(
+                  {
+                    scrollTop: target.offset().top,
+                  },
+                  100
+                );
+                $('#anchorListWrap>li>a').removeClass('active');
+                $(this).addClass('active');
+                return false;
+              }
+            }
+          });
+          $(window).scroll(function () {
+            $('section').each(function () {
+              if (ScrollView($(this))) {
+                var id = $(this).attr('id');
+                $('#anchorListWrap>li>a').removeClass('active');
+                $("#anchorListWrap>li>a[href='#" + id + "']").addClass('active');
+              }
+            });
+          });
+          
+
+          function ScrollView(element) {
+            var win = $(window);
+            var winTop = win.scrollTop();
+            var winBottom = winTop + win.height();
+            var elementTop = element.offset().top;
+            var elementBottom = elementTop + element.height();
+
+            if (elementBottom <= winBottom && elementTop >= winTop) {
+              return true;
+            }
+            return false;
+          }
+        });
+      </script>
+    </div>
+
+    @@include('includes/footer.html')
+    @@include('includes/scripts.html')
+
+    <!-- Modal -->
+    <div
+      class="modal modal-leadership fade"
+      id="modalDemo"
+      tabindex="-1"
+      aria-labelledby="modalDemoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">Modal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,18 @@
+// Using reversed logic, a media query can be constructed that prevents a mobile browser from triggering hover effects at all.
+/* 
+    @include hover-supported() {
+        background-color: white;
+    }
+*/
+@mixin hover-supported {
+    /* 
+     * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer 
+     * coarse: The primary input mechanism includes a pointing device of limited accuracy.
+     */
+    @media not all and (pointer: coarse) {
+        &:hover,
+        &:focus {
+            @content;
+        }
+    }
+}

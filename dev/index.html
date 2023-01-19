@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Final Assignment | Home'})
+    </head>
+    <body>
+        @@include('includes/modules/components/nav-bar.html')
+        <main class="theme-main">
+         @@include('includes/modules/above-the-fold/leadspace-home.html',{ 
+            'heading':'From the depths of the Earth to outer space, we are building the barely possible.',
+            'paragraph':' First Mode is a creative engineering company meeting humanity’s challenges and opportunities—wherever we find them.',
+            'reverse':'',
+            'home':true,
+            'img1':'images/hero-1.png',
+            'img2':'images/hero-2.png',
+            'img3':'images/hero-3.png',
+            'backgroundColor':'bg-white',
+            'borderTop':'leadspace__border__top--sky',
+            'py':'py-10',
+            'paragraphShow':false,
+            'paragraph2':'',
+            'aboutBtn':false
+         })
+         @@include('includes/modules/section/about-us.html')
+         @@include('includes/modules/section/things-to-remember.html',{
+            'imgSrc':'images/things-to-remember.png',
+            'altText':'Things to remember',
+            'eyebrow':'things to remember',
+            'heading':'To People That Want To Start BLOGS But Are Affraid To Get Started',
+            'body':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam. Nullam sed dolor in libero auctor gravida. Morbi eget nibh vel ligula consequat ultrices. Donec maximus dui sapien, ut ullamcorper nisi dignissim quis.',
+            'label':'More articles'
+         })
+         @@include('includes/modules/slider/home-caraousel.html')
+         @@include('includes/modules/section/blogs.html')
+         @@include('includes/modules/section/things-to-remember.html',{
+            'imgSrc':'images/above_testimonial.png',
+            'altText':'More Info',
+            'eyebrow':'more info',
+            'heading':'Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.',
+            'body':'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
+            'label':'Learn More'
+         })
+         @@include('includes/modules/section/testimonials.html')
+         @@include('includes/modules/section/hiring-banner.html',{
+            'heading':' Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.',
+            'paragraph':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam.',
+            'label':'See Our Blogs',
+            'background':'bg-blush'
+         })
+        </main>
+        @@include('includes/footer.html') @@include('includes/scripts.html')
+    </body>
+</html>

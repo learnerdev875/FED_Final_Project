@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Final Assignment | About'})
+    </head>
+    <body>
+        @@include('includes/modules/components/nav-bar.html')
+        <main class="theme-main">
+            @@include('includes/modules/above-the-fold/leadspace-home.html',{ 
+            'heading':'Our people make the difference',
+            'paragraph':'The First Mode team thrives at the intersection of industry and technology. Every day, we create new approaches to unique problems through iterative analysis and boundless imagination.',
+            'reverse':'flex-row-reverse',
+            'img1':'images/about-hero-2.png',
+            'img2':'images/about-hero-1.png', 
+            'img3':'images/about-hero-3.png',
+            'backgroundColor':'bg-sky', 
+            'borderTop':'leadspace__border__top--dark',
+            'whiteText':'text-white',
+            'home':false,
+            'py':'py-6',
+            'paragraphShow':true,
+            'paragraph2':'First Mode people are entrepreneurial, visionary, and multi-faceted, and our teams bring their full selves to the table for a truly collaborative experience.',
+            'aboutBtn':true
+})
+            @@include('includes/modules/section/about-our-services.html')
+        </main>
+        @@include('includes/footer.html') @@include('includes/scripts.html')
+    </body>
+</html>

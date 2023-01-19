@@ -1,0 +1,10 @@
+// Truncating
+// eg: @include ellipsis(2em, 2);
+@mixin ellipsis($max-height, $lines: 2) {
+    overflow: hidden !important;
+    max-height: $max-height !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: $lines !important;
+    text-overflow: -o-ellipsis-lastline !important;
+}

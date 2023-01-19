@@ -1,0 +1,15 @@
+@import '../common-imports';
+.blogs {
+    .ratio {
+        &-327x334 {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: 108.407%;
+                // width: 45.2rem;
+            }
+            @include media-breakpoint-up(xl) {
+                --bs-aspect-ratio: 85.8823%;
+                // width: 51rem;
+            }
+        }
+    }
+}

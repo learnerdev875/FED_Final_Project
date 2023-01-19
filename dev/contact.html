@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Final Assignment | Single Blog'})
+    </head>
+    <body>
+        @@include('includes/modules/components/nav-bar.html')
+        <main class="theme-main">
+            @@include('includes/modules/above-the-fold/leadspace-blog.html',{ 
+                'heading':'Contact us',
+                'onlyHeading':false,
+                'headingDescription':true,
+                'description':false, 
+                'imgSrc':'images/contact-us.png',
+                'altText':'Girl with a cycle',
+                'col1':'col-md-8',
+                'col2':'',
+                'offset1':'offset-md-4',
+                'offset2':'offset-xl-3',
+                'offset3':'offset-xl-1',
+                'leadspace-blog__negativeMargin':'leadspace-blog__negativeMargin--contact',
+                'contactForm':true
+            })
+        </main>
+        @@include('includes/footer.html') @@include('includes/scripts.html')
+    </body>
+</html>

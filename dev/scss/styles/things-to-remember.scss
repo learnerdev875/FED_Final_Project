@@ -1,0 +1,30 @@
+@import '../common-imports';
+.things-to-remember {
+    .ratio {
+        &-4x3 {
+            @include media-breakpoint-up(md) {
+                --bs-aspect-ratio: 73%;
+            }
+            @include media-breakpoint-up(xl) {
+                --bs-aspect-ratio: 75%;
+            }
+        }
+    }
+    &__image {
+        @include media-breakpoint-up(md) {
+            max-width: 45.2rem;
+            max-height: 33rem;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 62rem;
+            max-height: 46.5rem;
+        }
+        &--drop-shadow {
+            box-shadow: 0.8rem 0.8rem 0 0 rgba(245, 206, 190, 1);
+        }
+    }
+    &__heading {
+        max-width: 88.71%;
+        font-weight: 400;
+    }
+}

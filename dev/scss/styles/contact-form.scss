@@ -1,0 +1,55 @@
+@import '../common-imports';
+.contact-form {
+    &__container {
+        box-shadow: 0.8rem 0.8rem 0rem 0rem rgba(234, 239, 237, 1);
+        input[type='text'] {
+            border: 0.2rem solid $space;
+            &::placeholder {
+                font-style: italic;
+                color: $black;
+            }
+        }
+        input[type='email'] {
+            border: 0.2rem solid $space;
+            &::placeholder {
+                font-style: italic;
+                color: $black;
+            }
+        }
+    }
+    &__caption {
+        font-weight: 500;
+    }
+    &__input {
+        &--first-name,
+        &--last-name {
+            @include media-breakpoint-up(md) {
+                width: 40rem;
+            }
+        }
+    }
+    &__select {
+        &--services {
+            @include media-breakpoint-up(md) {
+                width: 40rem;
+            }
+            select {
+                border: 0.2rem solid $space;
+                option {
+                    background-color: $space;
+                    color: $white;
+                    margin-bottom: 1.6rem;
+                    &:hover {
+                        color: $peach;
+                        background-color: $space;
+                    }
+                    &::before {
+                        content: '✔';
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

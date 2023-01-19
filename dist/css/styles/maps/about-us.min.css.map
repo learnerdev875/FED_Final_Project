@@ -1,0 +1,1 @@
+{"version":3,"sources":["about-us.scss"],"names":[],"mappings":"AACI,mBACI,kBAAA,CACA,qBAAA","file":"../about-us.min.css","sourcesContent":[".about-us {\r\n    &__heading {\r\n        text-align: justify;\r\n        letter-spacing: -0.02em;\r\n    }\r\n}\r\n"]}

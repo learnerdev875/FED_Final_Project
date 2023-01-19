@@ -1,0 +1,62 @@
+@import '../common-imports';
+.more-blogs {
+    &__search {
+        display: flex;
+        align-items: center;
+        border: 0.2rem solid $sky;
+        border-radius: 3rem;
+        overflow: hidden;
+        // padding: 1.6rem 2rem 1.6rem 3rem;
+        position: relative;
+        @include media-breakpoint-up(md) {
+            max-width: 50rem;
+        }
+        & input[type='search'] {
+            width: inherit;
+            flex-grow: 1;
+            outline: none;
+            border: none;
+            // font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 2.8rem;
+            padding: 0;
+        }
+        & i {
+            font-size: 2.4rem;
+            color: $sky;
+            position: absolute;
+            right: 2rem;
+        }
+    }
+    &__pagination {
+        &__numbers {
+            gap: 1rem;
+            span {
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            span:nth-child(1) {
+                font-weight: 700;
+            }
+        }
+    }
+    &__dropdown {
+        &__list {
+            padding: 1.4rem 2.1rem 1.4rem 1.6rem;
+            border: 0.1rem solid $peach;
+            top: 2rem !important;
+            li {
+                padding: 0;
+                margin: 0;
+                border-bottom: 0.1rem solid #000;
+                &:last-of-type {
+                    border-bottom: none;
+                }
+                a {
+                    padding: 0 0.7rem 0 0.8rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

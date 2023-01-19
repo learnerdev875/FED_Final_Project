@@ -1,0 +1,17 @@
+@import '../common-imports';
+.related {
+    &-blogs {
+        &__cards {
+            @include media-breakpoint-up(md) {
+                article:last-child {
+                    display: none;
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                article:last-child {
+                    display: block;
+                }
+            }
+        }
+    }
+}
