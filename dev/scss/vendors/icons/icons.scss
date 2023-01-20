@@ -2,18 +2,17 @@
 
 @font-face {
     font-family: '#{$icomoon-font-family}';
-    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?sdiaar');
-    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?sdiaar#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?sdiaar') format('truetype'),
-        url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?sdiaar') format('woff'),
-        url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?sdiaar##{$icomoon-font-family}') format('svg');
+    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?xayvjh');
+    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?xayvjh#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?xayvjh') format('truetype'),
+        url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?xayvjh') format('woff'),
+        url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?xayvjh##{$icomoon-font-family}') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+.icon {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: '#{$icomoon-font-family}' !important;
     speak: never;
@@ -127,10 +126,5 @@
     &:before {
         content: $icon-search;
         color: #233554;
-    }
-}
-.icon-slider {
-    &:before {
-        content: $icon-slider;
     }
 }
