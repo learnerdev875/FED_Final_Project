@@ -3,7 +3,7 @@ build
 coverage
 
 # Ignore all HTML files:
-index.html
+# index.html
 blogs.html
 about.html
 blog-listing.html
